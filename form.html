@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        
+    <form action="">
+
+     <h3>Fill the form below...</h3>
+
+     <div class="Name">
+        <label for="fname">First name:</label><br>
+        <input required type="text" id="fname" name="fname"  placeholder="Enter name:" size="25"><i class="fa-regular fa-address-card"></i><br><br>
+
+        <label for="lname">Last name:</label><br>
+        <input required type="text" id="lname" name="lname" placeholder="Enter lastname:" size="25"><br><br>
+     </div>
+
+     <div class="mail">
+        <label for="email">E-Mail:</label><br>
+        <input required type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+        placeholder="Enter your mail:" size="25"><br><br>
+    </div>
+
+
+     <div class="number">
+        <label for="phone">Number:</label><br>
+        <input required type="tel" pattern="^\d{10}$" maxlength="10" id="phone" name="number" placeholder="Enter your 10 digit number:" size="25"><br><br>
+    </div>
+
+    <div class="gender">
+        <label for="gender">Gender:</label><br>
+
+        <input required type="radio" id="male" name="gender" value="Male">
+        <label for="male">male</label><br>
+
+        <input required type="radio" id="female" name="gender" value="Female">
+        <label for="female">female</label><br><br>
+    </div>
+
+    <div class="hobbies">
+        <label for="hobbies">Hobbies:</label><br>
+        <input required type="checkbox" id="football" name="hobbies" value="Football">
+        <label for="football">Football</label><br>
+    
+        <input required type="checkbox" id="singing" name="hobbies" value="Singing">
+        <label for="singing">Singing</label><br>
+
+        <input required type="checkbox" id="cricket" name="hobbies" value="cricket">
+        <label for="cricket">Cricket</label><br><br>
+    </div>
+
+    <div class="submitMessage">
+        <label for="description">Tell about yourself:</label><br>
+        <textarea  name="message" id ="description" placeholder="Message..." rows="5" cols="25" minlength="10" maxlength="50"  required /></textarea><br><br>
+    </div>
+
+    <div class="submit">
+        <button class="submit">Submit</button>
+    </div>
+
+    </div>
+
+    </form> 
+
+    </div>
+
+</body>
+</html>
